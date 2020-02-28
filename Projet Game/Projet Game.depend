@@ -1,0 +1,50 @@
+# depslib dependency file v1.0
+1582827020 source:c:\users\dnhal\desktop\ynov\langage c\projet game\attack.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	"personnage.h"
+
+1582825714 source:c:\users\dnhal\desktop\ynov\langage c\projet game\main.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	"menu.h"
+
+1582825735 c:\users\dnhal\desktop\ynov\langage c\projet game\menu.h
+	"Attack.h"
+	"personnage.h"
+
+1582870537 source:c:\users\dnhal\desktop\ynov\langage c\projet game\menu.c
+	<stdio.h>
+	<stdlib.h>
+	"menu.h"
+
+1582823376 c:\users\dnhal\desktop\ynov\langage c\projet game\attack.h
+
+1582283524 source:c:\users\dnhal\desktop\ynov\langage c\projet game\deplacement.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+
+1582126249 source:c:\users\dnhal\desktop\ynov\langage c\projet game\loading.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+
+1582223474 source:c:\users\dnhal\desktop\ynov\langage c\projet game\src\ennemi.c
+	"../include/personnage.h"
+
+1582223456 c:\users\dnhal\desktop\ynov\langage c\projet game\include\personnage.h
+
+1582283459 source:c:\users\dnhal\desktop\ynov\langage c\projet game\src\personnage.c
+	<stdio.h>
+	<stdlib.h>
+
+1582727848 source:c:\users\dnhal\desktop\ynov\langage c\projet game\personnage.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+
+1582824866 c:\users\dnhal\desktop\ynov\langage c\projet game\personnage.h
+
