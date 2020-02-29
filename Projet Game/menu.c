@@ -55,8 +55,8 @@ void start()
     struct Monster monster3;
     struct Player player;
 
-    player.pv = 10;
-    player.force =2;
+    player.pv = 1000;
+    player.force =4;
     player.critique = 10;
     player.defense = 0;
     player.xp=0;
@@ -64,18 +64,21 @@ void start()
     monster1.pv = 10;
     monster1.force =2;
     monster1.critique = 2;
+    monster1.defense = 0;
 
     monster2.pv = 15;
     monster2.force =4;
     monster2.critique = 5;
+    monster2.defense = 2;
 
     monster3.pv = 20;
     monster3.force =6;
     monster3.critique = 10;
+    monster3.defense = 4;
 
 
     printf("ATTACK \n\n");
-    Attack(&player,&monster2);
+    Attack(&player,&monster1);
     printf("END Combat 1");
 
 

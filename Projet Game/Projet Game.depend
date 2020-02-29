@@ -48,3 +48,43 @@
 
 1582824866 c:\users\dnhal\desktop\ynov\langage c\projet game\personnage.h
 
+1582968738 source:c:\users\dnhal\desktop\projet\projet-rpg\projet game\deplacement.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+
+1582968738 source:c:\users\dnhal\desktop\projet\projet-rpg\projet game\loading.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+
+1582968738 source:c:\users\dnhal\desktop\projet\projet-rpg\projet game\main.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	"menu.h"
+
+1582968738 c:\users\dnhal\desktop\projet\projet-rpg\projet game\menu.h
+	"Attack.h"
+	"personnage.h"
+
+1582971911 c:\users\dnhal\desktop\projet\projet-rpg\projet game\attack.h
+
+1582976320 c:\users\dnhal\desktop\projet\projet-rpg\projet game\personnage.h
+
+1582976385 source:c:\users\dnhal\desktop\projet\projet-rpg\projet game\menu.c
+	<stdio.h>
+	<stdlib.h>
+	"menu.h"
+
+1582968738 source:c:\users\dnhal\desktop\projet\projet-rpg\projet game\personnage.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+
+1582977078 source:c:\users\dnhal\desktop\projet\projet-rpg\projet game\attack.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	"personnage.h"
+
