@@ -49,7 +49,8 @@ int Attack(struct Player *p,struct Monster *m)
 
                         case 1:
                                 Attackplayer(p,m);
-                                Attackmonster(p,m);
+                                if(m->pv>0)
+                                    Attackmonster(p,m);
                             printf("choix 1\n");
 
                             break;
@@ -75,7 +76,7 @@ int Attack(struct Player *p,struct Monster *m)
                 else if (m->pv<=0)
                 {
                     printf("WIN!!!");
-                    combatFin = 1
+                    combatFin = 1;
                     p->xp+=5;
 
                 }
@@ -137,6 +138,10 @@ void Attackmonster(struct Player *p,struct Monster *m)
 printf("le joueur avait:%d PV\nLe monstre a fait: %d degats \nIl reste au joueur: %d HP\n\n",pvbase,dgt,p->pv);
 }
 
+// retourne si critique ou échec:
+// 1 normal
+// 2 critique
+// 0 echec
 int critique(){
 	int attackmystery=((rand()%100));
 	printf("random number 10 to 100:%d\n",attackmystery);

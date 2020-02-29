@@ -60,21 +60,28 @@ void start()
     player.critique = 10;
     player.defense = 0;
     player.xp=0;
+    //int lvl[11] = {5,10,15,20,25,30,35,40,45,50,55};
+   // player.lvlup = lvl;
+    player.niveau=1;
 
     monster1.pv = 10;
     monster1.force =2;
     monster1.critique = 2;
     monster1.defense = 0;
+    monster1.niveau=1;
 
     monster2.pv = 15;
     monster2.force =4;
     monster2.critique = 5;
     monster2.defense = 2;
+    monster2.niveau=2;
+
 
     monster3.pv = 20;
     monster3.force =6;
     monster3.critique = 10;
     monster3.defense = 4;
+    monster3.niveau=3;
 
 
     printf("ATTACK \n\n");

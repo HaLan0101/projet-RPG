@@ -6,6 +6,7 @@ struct Monster
     int defense;
     char Name [100];
     int critique;
+    int niveau;
 } ;
 struct Player
 {
@@ -15,4 +16,6 @@ struct Player
     char Name [100];
     int critique;
     int xp;
+    int lvlup [11];
+    int niveau;
 };
