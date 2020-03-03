@@ -49,13 +49,13 @@ void menu()
 void start()
 {
 
-     printf(" \n\n Start \n\n");
+    printf(" \n\n Start \n\n");
     struct Monster monster1;
     struct Monster monster2;
     struct Monster monster3;
     struct Player player;
 
-    player.pv = 1000;
+    player.pv = 10;
     player.force =4;
     player.critique = 10;
     player.defense = 0;
@@ -84,10 +84,10 @@ void start()
     monster3.niveau=3;
 
 
-    printf("ATTACK \n\n");
+    printf("\n\n ATTACK \n\n");
     Attack(&player,&monster1);
-    printf("END Combat 1");
+    printf("\n\n END Combat avec monster 1 \n\n");
 
 
- printf("END START");
+ printf("\n\n END START \n\n");
 }
