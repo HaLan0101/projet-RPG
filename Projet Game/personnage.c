@@ -4,13 +4,14 @@
 #include "personnage.h"
 
 
-void experience(struct Player* player, int niveauMonstre)
+/*void experience(struct Player* player)
 {
     // TODO gagner xp
-    /*if (player->xp >= player->lvlup[player->niveau-1] )
+    if (player->xp=4)
     {
 
-    }*/
+
+    }
 
 
 

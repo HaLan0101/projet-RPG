@@ -53,7 +53,14 @@ void start()
     struct Monster monster1;
     struct Monster monster2;
     struct Monster monster3;
-    struct Player player;
+    struct Monster monster4;
+    struct Monster monster5;
+    struct Monster monster6;
+    struct Player player1;
+    struct Player player2;
+    struct Player player3;
+    struct Player player4;
+    struct Player player5;
 
     player1.pv = 20;
     player1.force =4;
