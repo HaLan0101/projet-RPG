@@ -123,7 +123,7 @@ void Attackmonster(struct Player *p,struct Monster *m)
         case 0:
             printf("\n\n Miss attack monster\n\n");
             p->pv-=0;
-            break;
+            dsbreak;
     }
 printf("le joueur avait:%d PV\nLe monstre a fait: %d degats \nIl reste au joueur: %d HP\n\n",pvbase,dgt,p->pv);
 }
