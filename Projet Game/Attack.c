@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-#include "personnage.h"
+#include "Structure.h"
 /*void attack()
 {
 	MAX=10,
@@ -71,12 +71,18 @@ int Attack(struct Player *p,struct Monster *m)
         {
             printf("Le joueur est mort!!!");
             combatFin = -1;
+            menu();
         }
         else if (m->pv<=0)
         {
             printf("WIN!!!");
+            if (m->pv<=0)
+            {
+                p->xp += m->xp;
+                experience(p);
+            }
             combatFin = 1;
-            p->xp+=5;
+
         }
     }
     while (playerchoice != 3 && combatFin ==0);
@@ -123,7 +129,7 @@ void Attackmonster(struct Player *p,struct Monster *m)
         case 0:
             printf("\n\n Miss attack monster\n\n");
             p->pv-=0;
-            dsbreak;
+            break;
     }
 printf("le joueur avait:%d PV\nLe monstre a fait: %d degats \nIl reste au joueur: %d HP\n\n",pvbase,dgt,p->pv);
 }

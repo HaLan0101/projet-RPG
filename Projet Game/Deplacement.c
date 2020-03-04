@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-#include "Deplacement.h"
+#include "Structure.h"
 
 void initMap( struct Carte * map){
 int test [5][5] ={
