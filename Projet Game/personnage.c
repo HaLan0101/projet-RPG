@@ -48,11 +48,6 @@ void experience(struct Player* player)
         player->pv+=100;
         printf("votre defense mtn: %d, votre force mtn: %d, votre HP  mtn: %d", player->defense,player->force,player->pv);
     }
-
-
-
-
-
 }
 
 

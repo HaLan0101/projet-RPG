@@ -3,6 +3,7 @@
 #include "menu.h"
 #include "Structure.h"
 #include "Deplacement.h"
+#include "Loading.h"
 void menu()
 {
 	int choiceMenu;
@@ -26,10 +27,12 @@ void menu()
                 scanf("%s",yourname);
                 printf("Hello %s ! Welcome to the story of our game\n", yourname);
                 srand(time(NULL));
+                loading();
                 adventure();
                 break;
             case 2:
                 printf("Server loading please wait...");
+                loading();
                 break;
             case 3:
                 printf(" Name of student: \n DANG Ngoc Ha Lan \n PELENIO DJ Everson \n");
@@ -128,4 +131,43 @@ void start()
 
  printf("\n\n END START \n\n");
 }
-
+/*void continuer(struct Player* player)
+{
+    if(player->niveau == 1 && player->xp>=0)
+    {
+        printf("\n\n ATTACK avec monstre 1 \n\n");
+        Attack(&player,&monster1);
+        printf("\n\n END Combat avec monster 1 \n\n");
+    }
+    else if(player->niveau == 1 && player->xp>=1 && player->xp<=3 )
+    {
+        printf("\n\n ATTACK avec monstre 2 \n\n");
+        Attack(&player,&monster2);
+        printf("\n\n END Combat avec monster 2 \n\n");
+    }
+    else if(player->niveau == 2 && player->xp>=1 && player->xp<=3 )
+    {
+        printf("\n\n ATTACK avec monstre 3 \n\n");
+        Attack(&player,&monster3);
+        printf("\n\n END Combat avec monster 3 \n\n");
+    }
+    else if()
+    {
+        printf("\n\n ATTACK avec monstre 4 \n\n");
+        Attack(&player,&monster4);
+        printf("\n\n END Combat avec monster 4 \n\n");
+    }
+    else if()
+    {
+        printf("\n\n ATTACK avec monstre 5 \n\n");
+        Attack(&player,&monster5);
+        printf("\n\n END Combat avec monster 5 \n\n");
+    }
+    else if()
+    {
+        printf("\n\n ATTACK avec monstre 6 \n\n");
+        Attack(&player,&monster6);
+        printf("\n\n END Combat avec monster 6 \n\n");
+    }
+}
+*/

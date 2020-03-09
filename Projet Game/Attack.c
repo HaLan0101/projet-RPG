@@ -60,7 +60,7 @@ int Attack(struct Player *p,struct Monster *m)
                     break;
                 case 3:
                     printf("choix 3\n");
-                    //Run();
+                    adventure();
                     break;
                 default:
                     printf("Please choose a number between 1 and 3 \n");

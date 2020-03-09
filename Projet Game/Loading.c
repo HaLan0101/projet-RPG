@@ -1,16 +1,28 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-/*
-void Loading()
+#include "Loading.h"
+#include <windows.h>
+void loading()
 {
-    for(i=0; i<20; i++)
+    for (int i = 0 ; i < 5 ; i++)
     {
-        printf("\n");
+        Sleep(500);
+        system("cls");
+        printf("            loading       (._.)");
+
+        Sleep(500);
+        system("cls");
+        printf("            loading       ( l: )");
+
+        Sleep(500);
+        system("cls");
+        printf("            loading       ( .-. )");
+
+        Sleep(500);
+        system("cls");
+        printf("            loading       ( :l )");
     }
-    sleep(2000);
-    printf(                 _|_|_|
-
-
+    system("cls");
 }
-*/
+
