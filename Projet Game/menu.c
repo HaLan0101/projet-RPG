@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include "menu.h"
 #include "Structure.h"
+#include "Deplacement.h"
 void menu()
 {
 	int choiceMenu;
@@ -24,7 +25,8 @@ void menu()
                 char yourname[50];
                 scanf("%s",yourname);
                 printf("Hello %s ! Welcome to the story of our game\n", yourname);
-                start();
+                srand(time(NULL));
+                adventure();
                 break;
             case 2:
                 printf("Server loading please wait...");
@@ -126,3 +128,4 @@ void start()
 
  printf("\n\n END START \n\n");
 }
+

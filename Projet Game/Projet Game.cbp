@@ -43,6 +43,7 @@
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="Loading.h" />
+		<Unit filename="Structure.h" />
 		<Unit filename="main.c">
 			<Option compilerVar="CC" />
 		</Unit>
