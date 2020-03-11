@@ -14,6 +14,7 @@ while (1)
             {
                 printf("\n\nYou find The Legendary Hero gemstone next to corpse dressed like a thief.\n A lost artifact equipable to a sword giving it sharpness capable to cut the sky.");
                 start(monstre);
+                //si le joueur est gagné, niveau du monstre+1
                 monstre+=1;
             }
             else if (story>=2 && story<=10)

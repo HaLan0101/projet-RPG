@@ -3,6 +3,7 @@
 #include <time.h>
 #include "Structure.h"
 
+
 int Attack(struct Player *p,struct Monster *m)
 {
     srand(time(NULL));

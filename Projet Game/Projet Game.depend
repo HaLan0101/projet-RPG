@@ -1,69 +1,9 @@
 # depslib dependency file v1.0
-1583803171 source:c:\users\dnhal\desktop\projet\projet-rpg\projet game\attack.c
+1583957740 source:c:\users\dnhal\downloads\journey.c
 	<stdio.h>
 	<stdlib.h>
-	<time.h>
-	"Structure.h"
 
-1583806309 c:\users\dnhal\desktop\projet\projet-rpg\projet game\structure.h
-
-1583804287 source:c:\users\dnhal\desktop\projet\projet-rpg\projet game\loading.c
-	<stdio.h>
-	<stdlib.h>
-	<time.h>
-	"Loading.h"
-	<windows.h>
-
-1583887785 source:c:\users\dnhal\desktop\projet\projet-rpg\projet game\main.c
-	<stdio.h>
-	<stdlib.h>
-	<time.h>
-	"menu.h"
-	"Structure.h"
-
-1582968738 c:\users\dnhal\desktop\projet\projet-rpg\projet game\menu.h
-	"Attack.h"
-	"personnage.h"
-
-1582971911 c:\users\dnhal\desktop\projet\projet-rpg\projet game\attack.h
-
-1583340135 c:\users\dnhal\desktop\projet\projet-rpg\projet game\personnage.h
-
-1583937812 source:c:\users\dnhal\desktop\projet\projet-rpg\projet game\menu.c
-	<stdio.h>
-	<stdlib.h>
-	"menu.h"
-	"Structure.h"
-	"Deplacement.h"
-	"Loading.h"
-
-1583710618 c:\users\dnhal\desktop\projet\projet-rpg\projet game\deplacement.h
-
-1583768891 source:c:\users\dnhal\desktop\projet\projet-rpg\projet game\personnage.c
-	<stdio.h>
-	<stdlib.h>
-	<time.h>
-	"Structure.h"
-
-1583936210 source:c:\users\dnhal\desktop\projet\projet-rpg\projet game\deplacement.c
-	<time.h>
-	"Deplacement.h"
-
-1583761536 c:\users\dnhal\desktop\projet\projet-rpg\projet game\loading.h
-
-1583936350 source:c:\users\dnhal\desktop\projet\projet-rpg\projet game\journey.c
-	<stdlib.h>
-	"journey.h"
-
-1583956949 source:c:\users\dnhal\desktop\projetc\projet game\attack.c
-	<stdio.h>
-	<stdlib.h>
-	<time.h>
-	"Structure.h"
-
-1583956949 c:\users\dnhal\desktop\projetc\projet game\structure.h
-
-1583957209 source:c:\users\dnhal\desktop\projetc\projet game\deplacement.c
+1583958458 source:c:\users\dnhal\desktop\projetc\projet game\deplacement.c
 	<time.h>
 	"Deplacement.h"
 
@@ -85,22 +25,15 @@
 	"menu.h"
 	"Structure.h"
 
-1583956949 c:\users\dnhal\desktop\projetc\projet game\menu.h
+1583958558 c:\users\dnhal\desktop\projetc\projet game\menu.h
 	"Attack.h"
 	"personnage.h"
 
-1583956949 c:\users\dnhal\desktop\projetc\projet game\attack.h
+1583958512 c:\users\dnhal\desktop\projetc\projet game\attack.h
 
 1583956949 c:\users\dnhal\desktop\projetc\projet game\personnage.h
 
-1583957381 source:c:\users\dnhal\desktop\projetc\projet game\menu.c
-	<stdio.h>
-	<stdlib.h>
-	"menu.h"
-	"Structure.h"
-	"Deplacement.h"
-	"Loading.h"
-	"journey.h"
+1583956949 c:\users\dnhal\desktop\projetc\projet game\structure.h
 
 1583956949 source:c:\users\dnhal\desktop\projetc\projet game\personnage.c
 	<stdio.h>
@@ -108,9 +41,17 @@
 	<time.h>
 	"Structure.h"
 
-1583957311 c:\users\dnhal\desktop\projetc\projet game\journey.h
-
-1583957590 source:c:\users\dnhal\downloads\journey.c
+1583958234 source:c:\users\dnhal\desktop\projetc\projet game\attack.c
 	<stdio.h>
 	<stdlib.h>
+	<time.h>
+	"Structure.h"
+
+1583958404 source:c:\users\dnhal\desktop\projetc\projet game\menu.c
+	<stdio.h>
+	<stdlib.h>
+	"menu.h"
+	"Structure.h"
+	"Deplacement.h"
+	"Loading.h"
 

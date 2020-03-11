@@ -4,7 +4,7 @@
 #include "Structure.h"
 #include "Deplacement.h"
 #include "Loading.h"
-#include "journey.h"
+
 void menu(struct Player* p)
 {
 
@@ -133,6 +133,8 @@ void start(int numeroMonstre)
     monster6.critique = 0;
     monster6.defense = 4;
     monster3.xp = 11;
+
+    //essayer de augmonter le niveau des monstres de chaque fois quand le joueur est gagné le combat
     if (numeroMonstre == 1)
     {
         monstreActif = monster1;
