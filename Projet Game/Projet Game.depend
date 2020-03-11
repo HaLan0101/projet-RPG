@@ -29,7 +29,7 @@
 
 1583340135 c:\users\dnhal\desktop\projet\projet-rpg\projet game\personnage.h
 
-1583892520 source:c:\users\dnhal\desktop\projet\projet-rpg\projet game\menu.c
+1583937812 source:c:\users\dnhal\desktop\projet\projet-rpg\projet game\menu.c
 	<stdio.h>
 	<stdlib.h>
 	"menu.h"
@@ -45,9 +45,13 @@
 	<time.h>
 	"Structure.h"
 
-1583892495 source:c:\users\dnhal\desktop\projet\projet-rpg\projet game\deplacement.c
+1583936210 source:c:\users\dnhal\desktop\projet\projet-rpg\projet game\deplacement.c
 	<time.h>
 	"Deplacement.h"
 
 1583761536 c:\users\dnhal\desktop\projet\projet-rpg\projet game\loading.h
+
+1583936350 source:c:\users\dnhal\desktop\projet\projet-rpg\projet game\journey.c
+	<stdlib.h>
+	"journey.h"
 

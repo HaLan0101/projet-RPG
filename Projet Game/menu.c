@@ -6,6 +6,30 @@
 #include "Loading.h"
 void menu(struct Player* p)
 {
+
+    printf("                 -==\\                         `//~\\   ~~~~`---.___.-~~\n");
+    printf("             ______-==|                         | |  \\           _-~`\n");
+    printf("       __--~~~  ,-/-==\\                        | |   `\        ,'\n");
+    printf("    _-~       /'    |  \\                      / /      \      /\n");
+    printf("  .'        /       |   \\                   /' /        \   /'\n");
+    printf(" /  ____  /         |    \`\.__/-~~ ~ \ _ _/'  /          \/'\n");
+    printf("/-'~    ~~~~~---__  |     ~-/~         ( )   /'        _--~`\n");
+    printf("                  \_|      /        _)   ;  ),   __--~~\n");
+    printf("                    '~~--_/      _-~/-  / \   '-~ \ \n");
+    printf("                   {\__--_/}    / \\_>- )<__\      \ \n");
+    printf("                   /'   (_/  _-~  | |__>--<__|      |\n");
+    printf("                  |0  0 _/) )-~     | |__>--<__|     |\n");
+    printf("                  / /~ ,_/       / /__>---<__/      |\n");
+    printf("                 o o _//        /-~_>---<__-~      /\n");
+    printf("                 (^(~          /~_>---<__-      _-~\n");
+    printf("                ,/|           /__>--<__/     _-~\n");
+    printf("             ,//('(          |__>--<__|     /                  .----_\n");
+    printf("            ( ( '))          |__>--<__|    |                 /' _---_~\ \n");
+    printf("         `-)) )) (           |__>--<__|    |               /'  /     ~\`\ \n");
+    printf("        ,/,'//( (             \__>--<__\    \            /'  //        ||\n");
+    printf("      ,( ( ((, ))              ~-__>--<_~-_  ~--____---~' _/'/        /'\n");
+    printf("    `~/  )` ) ,/|                 ~-_~>--<_/-__       __-~ _/\n");
+    printf("   ;'( ')/ ,)(                              ~~~~~~~~~~\n");
 	int choiceMenu;
 	printf("====Main Menu==== \n\n");
 	printf("1. Create new game \n");
@@ -108,7 +132,6 @@ void start(int numeroMonstre)
     monster6.critique = 0;
     monster6.defense = 4;
     monster3.xp = 11;
-
     if (numeroMonstre == 1)
     {
         monstreActif = monster1;
@@ -141,6 +164,7 @@ void start(int numeroMonstre)
 
 
  printf("\n\n END START \n\n");
+ return 0;
 }
 /*void continuer(struct Player* player, struct Monster *monster1,struct Monster *monster2,struct Monster *monster3,struct Monster *monster4,struct Monster *monster5,struct Monster *monster6)
 {
