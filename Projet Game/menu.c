@@ -4,6 +4,7 @@
 #include "Structure.h"
 #include "Deplacement.h"
 #include "Loading.h"
+#include "journey.h"
 void menu(struct Player* p)
 {
 
@@ -52,7 +53,7 @@ void menu(struct Player* p)
                 printf("Hello %s ! Welcome to the story of our game\n", yourname);
                 srand(time(NULL));
                 loading();
-                adventure(p);
+                journey(p);
                 break;
             case 2:
                 printf("Server loading please wait...");
