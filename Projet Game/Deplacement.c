@@ -2,25 +2,31 @@
 #include "Deplacement.h"
 
 
-void adventure()
+void adventure(struct Player* p)
 {
+while (1)
+    {
             int story =((rand()%100));
+            int monstre=1;
             printf("\n\nRandom number 1 to 100: %d\n\n",story);
             printf("\n\nYou've found a new place");
             if (story==1 || story==0)
             {
                 printf("\n\nYou find The Legendary Hero gemstone next to corpse dressed like a thief.\n A lost artifact equipable to a sword giving it sharpness capable to cut the sky.");
-                start();
+                start(monstre);
+                monstre+=1;
             }
             else if (story>=2 && story<=10)
             {
                 printf("\n\nYou've found a flower of might, a consumable flower that strengthens the consumers power");
-                start();
+                start(monstre);
+                monstre+=1;
             }
             else if (story>10 && story<=20)
             {
                 printf("\n\nYou've found an adamant flower, a consumable flower that hardens the consumers flesh");
-                start();
+                start(monstre);
+                monstre+=1;
             }
             else if (story>20 && story<=30)
             {
@@ -40,11 +46,13 @@ void adventure()
                             case 1:
                                 printf("You swallowed the rock, giving you a weird stomach ache and a weird feeling of strenght.");
                                 //+5 defense
+                                adventure(p);
                                 break;
 
                             case 2:
                                 printf("You break the rock with a fast swift, making your sword glow in a shiny light");
                               //+5attack
+                                adventure(p);
                                 break;
                             case 3:
                                 encounter1story =((rand()%100));
@@ -53,24 +61,27 @@ void adventure()
                                 if (encounter1story <=50)
                                 {
                                     printf("You open the chest and it happened to be a hidden Mimic");
-                                    start(); // combat
+                                    start(monstre);
+                                    monstre+=1; // combat
                                 }
                                 else if (encounter1story > 50)
                                 {
                                     treasurechest = ((rand()%100));
                                     printf("\n\nRandom number 1 to 100: %d\n\n",treasurechest);
                                     printf("You've found multiple potions");
-                                if (treasurechest <= 50)
-                                {
-                                    printf("You've found 2 potions");
-                                    //add 2 potions
+                                    if (treasurechest <= 50)
+                                    {
+                                        printf("You've found 2 potions");
+                                        //add 2 potions
+                                        adventure(p);
+                                    }
+                                    else if (treasurechest > 50)
+                                    {
+                                        printf("You've found 4 potions");
+                                        //add 4 potions
+                                        adventure(p);
+                                    }
                                 }
-                                else if (treasurechest > 50)
-                                {
-                                    printf("You've found 4 potions");
-                                    //add 4 potions
-                                }
-                            }
                             break;
                         }
                 }
@@ -93,17 +104,20 @@ void adventure()
                         {
                             case 1:
                                 printf("His smiled turned into a frown and leave.");
-                                start();
+                                start(monstre);
+                                monstre+=1;
                                 break;
 
                             case 2:
                                 printf("You stab him right into his chest and nothing happens. His body was as hard as an adamantite\n");
                                 printf("He smile turn into a forced one and left you alone in the dark");
-                                start();
+                                start(monstre);
+                                monstre+=1;
                                 break;;
                             case 3:
                                 printf("You walk away.\n You turned your back to look at him one more time but he already dissapear with the fire.\n");
-                                start();
+                                start(monstre);
+                                monstre+=1;
                                 break;
                         }
                 }
@@ -128,19 +142,19 @@ void adventure()
                             case 1:
                                 printf("You punch her right into her pretty face.\n She bleeds and dies\n");
                                 // +1 potion
-                                adventure();
+                                adventure(p);
 
                             case 2:
                                 printf("You embrace her slender unnourished body and beg to head for safety\n");
                                 printf("She heartfully accepts and leaves\n");
                                 printf("Her warmth gave you courage\n");
                                 //+2 defence
-                                adventure();
+                                adventure(p);
                             case 3:
                                 printf("You ignored her presence thinking she could be a monster.\n She follows you like newborn duckling and then died from exhaustion.\n");
                                 printf("Her corpse confirmed that she was a real person and not a trick.\n You feel bad from regret.");
                                 //-2 defence
-                                adventure();
+                                adventure(p);
 
                         }
                 }
@@ -153,6 +167,8 @@ void adventure()
                 printf("\n\nIt flew around you covering you with fairy dust.\n");
                 printf("\n\nYour body shined as your brain absorbs memories from your predecesors");
                 // +10exp
+                experience(p);
+                adventure(p);
 
             }
             else if (story>60 && story<=70)
@@ -161,6 +177,7 @@ void adventure()
                 printf("\n\nYou as you keep walking in the forest.\n");
                 printf("\n\nYou trip unto a rock");
                 //-2hp
+                adventure(p);
 
             }
             else if (story>70 && story<=80)
@@ -169,14 +186,15 @@ void adventure()
                 printf("\n\You've found a fountain of health.\n A legendary water source that rumored to give immortality if drank\n");
                 printf("\n\nYou drink it confidently");
                 // +30 hp
+                adventure(p);
 
             }
             else if (story>80 && story<=90)
             {
 
                     int encounter4;
-                    printf("You're now exhausted from walking randomly and try to find a goo place to sleep");
-                    printf("/n 1. Sleep beside a Tree. \n");
+                    printf("You're now exhausted from walking randomly and try to find a goo place to sleep\n");
+                    printf("1. Sleep beside a Tree. \n");
                     printf("2. Sleep on the grass \n");
                     printf("3. Don't sleep \n");
 
@@ -187,17 +205,20 @@ void adventure()
                         {
                             case 1:
                                 printf("You under the tree. After a moment of rest , it started moving\n The tree turns out to be a treant and starts attacking you.");
-                                // combat
-                                start();
+
+                                start(monstre);
+                                monstre+=1;
                                 break;
 
                             case 2:
                                 printf("You are able to relax on the windy grass field");
                                 // +5hp
+                                adventure(p);
                                 break;
                             case 3:
                                 printf("You kept walking, collapse due to fatigue and hit your face on the hard ground");
                                 //-2 health
+                                adventure(p);
                                 break;
 
                         }
@@ -210,6 +231,8 @@ void adventure()
                 printf("\n\nYou feel lonely and decided to day dream.\n You remember the times you trained with your allies\n");
                 printf("\n\nYou then start practicing your skills in your head\n");
                 // +5 exp
+                experience(p);
+                adventure(p);
             }
-
+    }
 }

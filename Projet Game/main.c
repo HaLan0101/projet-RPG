@@ -4,7 +4,8 @@
 #include "menu.h"
 #include "Structure.h"
 
-int main()
+int main(struct Player* p)
 {
-    menu();
+
+    menu(&p);
 }

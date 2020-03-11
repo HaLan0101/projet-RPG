@@ -2,31 +2,6 @@
 #include <stdlib.h>
 #include <time.h>
 #include "Structure.h"
-/*void attack()
-{
-	MAX=10,
-	MIN=0;
-	int attackmystery;
-	srand(time(NULL));
-	attackmystery=(rand());
-	while (attackmystery>MIN && attackmystery<MAX)
-	{
-		if (attackmystery == 7 || attackmystery == 9 )
-		{
-			printf("Double attack");
-		}
-		else if (attackmystery == 0 || attackmystery == 10)
-		{
-			printf("Miss attack");
-		}
-		else
-		{
-			printf("normal");
-		}
-	}
-	return 0;
-}
-*/
 
 int Attack(struct Player *p,struct Monster *m)
 {

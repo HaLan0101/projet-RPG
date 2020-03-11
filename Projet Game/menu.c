@@ -4,7 +4,7 @@
 #include "Structure.h"
 #include "Deplacement.h"
 #include "Loading.h"
-void menu()
+void menu(struct Player* p)
 {
 	int choiceMenu;
 	printf("====Main Menu==== \n\n");
@@ -28,7 +28,7 @@ void menu()
                 printf("Hello %s ! Welcome to the story of our game\n", yourname);
                 srand(time(NULL));
                 loading();
-                adventure();
+                adventure(p);
                 break;
             case 2:
                 printf("Server loading please wait...");
@@ -52,9 +52,10 @@ void menu()
     while (choiceMenu != 5);
 }
 
-void start()
-{
 
+void start(int numeroMonstre)
+{
+    struct Monster monstreActif;
     printf(" \n\n Start \n\n");
     struct Monster monster1;
     struct Monster monster2;
@@ -64,18 +65,12 @@ void start()
     struct Monster monster6;
     struct Player player;
 
-
     player.pv =70;
     player.force =6;
     player.critique = 0;
     player.defense = 0;
     player.xp=0;
     player.niveau=1;
-
-
-    //int lvl[11] = {5,10,15,20,25,30,35,40,45,50,55};
-   // player.lvlup = lvl;
-
 
     monster1.pv = 20;
     monster1.force =4;
@@ -114,56 +109,72 @@ void start()
     monster6.defense = 4;
     monster3.xp = 11;
 
+    if (numeroMonstre == 1)
+    {
+        monstreActif = monster1;
+    }
+    else if (numeroMonstre == 2)
+    {
+        monstreActif = monster2;
+    }
+    else if (numeroMonstre == 3)
+    {
+        monstreActif = monster3;
+    }
+    else if (numeroMonstre == 4)
+    {
+        monstreActif = monster4;
+    }
+    else if (numeroMonstre == 5)
+    {
+        monstreActif = monster5;
+    }
+    else if (numeroMonstre == 6)
+    {
+        monstreActif = monster6;
+    }
 
-
-
-
-    printf("\n\n ATTACK avec monstre 1 \n\n");
-    Attack(&player,&monster1);
-    printf("\n\n END Combat avec monster 1 \n\n");
-    printf("\n\n ATTACK avec monstre 2 \n\n");
-    Attack(&player,&monster2);
-    printf("\n\n END Combat avec monster 2 \n\n");
-    printf("\n\n ATTACK avec monstre 3 \n\n");
-    Attack(&player,&monster3);
-    printf("\n\n END Combat avec monster 3 \n\n");
+    // COMBAT contre monstreActif
+    printf("\n\n ATTACK avec monstre %d \n\n",numeroMonstre);
+    Attack(&player,&monstreActif);
+    printf("\n\n END Combat avec monster %d \n\n",numeroMonstre);
 
 
  printf("\n\n END START \n\n");
 }
-/*void continuer(struct Player* player)
+/*void continuer(struct Player* player, struct Monster *monster1,struct Monster *monster2,struct Monster *monster3,struct Monster *monster4,struct Monster *monster5,struct Monster *monster6)
 {
-    if(player->niveau == 1 && player->xp>=0)
+    if(player->niveau == 1 && player->xp>=0 && player->xp<1)
     {
         printf("\n\n ATTACK avec monstre 1 \n\n");
         Attack(&player,&monster1);
         printf("\n\n END Combat avec monster 1 \n\n");
     }
-    else if(player->niveau == 1 && player->xp>=1 && player->xp<=3 )
+    else if(player->niveau == 1 && player->xp>=1 && player->xp<4 )
     {
         printf("\n\n ATTACK avec monstre 2 \n\n");
         Attack(&player,&monster2);
         printf("\n\n END Combat avec monster 2 \n\n");
     }
-    else if(player->niveau == 2 && player->xp>=1 && player->xp<=3 )
+    else if(player->niveau == 2 && player->xp>=4 && player->xp<9 )
     {
         printf("\n\n ATTACK avec monstre 3 \n\n");
         Attack(&player,&monster3);
         printf("\n\n END Combat avec monster 3 \n\n");
     }
-    else if()
+    else if(player->niveau == 3 && player->xp>=9 && player->xp<16 )
     {
         printf("\n\n ATTACK avec monstre 4 \n\n");
         Attack(&player,&monster4);
         printf("\n\n END Combat avec monster 4 \n\n");
     }
-    else if()
+    else if(player->niveau == 4 && player->xp>=16 && player->xp<25)
     {
         printf("\n\n ATTACK avec monstre 5 \n\n");
         Attack(&player,&monster5);
         printf("\n\n END Combat avec monster 5 \n\n");
     }
-    else if()
+    else if(player->niveau == 5 && player->xp>=25 && player->xp<36)
     {
         printf("\n\n ATTACK avec monstre 6 \n\n");
         Attack(&player,&monster6);
@@ -171,3 +182,4 @@ void start()
     }
 }
 */
+

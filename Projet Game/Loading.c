@@ -5,7 +5,7 @@
 #include <windows.h>
 void loading()
 {
-    for (int i = 0 ; i < 5 ; i++)
+    for (int i = 0 ; i < 2 ; i++)
     {
         Sleep(500);
         system("cls");
